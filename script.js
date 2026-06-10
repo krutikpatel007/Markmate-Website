@@ -24,15 +24,17 @@ function renderIcons() {
 
 function closeMenu() {
   document.body.classList.remove("menu-open");
-  header.classList.remove("menu-active");
-  menuToggle.setAttribute("aria-expanded", "false");
+  if (header) header.classList.remove("menu-active");
+  if (menuToggle) menuToggle.setAttribute("aria-expanded", "false");
 }
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = header.classList.toggle("menu-active");
-  document.body.classList.toggle("menu-open", isOpen);
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-});
+if (menuToggle && header) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = header.classList.toggle("menu-active");
+    document.body.classList.toggle("menu-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
 navLinks.forEach((link) => {
   link.addEventListener("click", closeMenu);
@@ -56,8 +58,9 @@ buyerTabs.forEach((tab) => {
   });
 });
 
-leadForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+if (leadForm) {
+  leadForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
   const formFields = leadForm.querySelector(".form-fields");
   const formSuccess = leadForm.querySelector("#formSuccess");
@@ -122,7 +125,8 @@ leadForm.addEventListener("submit", (event) => {
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalBtnContent;
     });
-});
+  });
+}
 
 renderIcons();
 initScrollReveal();
