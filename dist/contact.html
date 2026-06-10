@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with the MarkMate team to schedule a demo, request pricing, or discuss source code purchases."
+    />
+    <title>Contact Us | MarkMate Smart Attendance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/script-C2vHGidT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/script-CKsKBxkw.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="MarkMate home">
+        <img class="brand-logo" src="./assets/logo_1-CR_n5tLJ.png" alt="MarkMate Logo" />
+        <span>MarkMate</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#solution">Solution</a>
+        <a href="index.html#buyers">For teams</a>
+        <a href="index.html#plans">Plans</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Book demo</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="contact-page-hero">
+        <div class="contact-split">
+          <div class="contact-copy">
+            <p class="section-kicker">Get in Touch</p>
+            <h1>Let's build your attendance solution.</h1>
+            <p class="lead-text">
+              Have questions about our custom pricing, source code licensing, or features? 
+              Reach out and our team will get back to you shortly.
+            </p>
+            <div class="contact-info-grid">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="info-details">
+                  <h4>Email Us</h4>
+                  <a href="mailto:krutiksojitra210@gmail.com">krutiksojitra210@gmail.com</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i data-lucide="phone"></i>
+                </div>
+                <div class="info-details">
+                  <h4>Call Us</h4>
+                  <p>+1 (555) 234-5678</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="office-hours-card">
+              <h4><i data-lucide="clock"></i> Office Hours</h4>
+              <p><span>Monday - Friday</span> <span>9:00 AM - 6:00 PM EST</span></p>
+              <p><span>Saturday - Sunday</span> <span>Closed</span></p>
+            </div>
+          </div>
+
+          <form class="lead-form" id="leadForm">
+            <div class="form-fields">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email address
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Organization
+                <input type="text" name="organization" placeholder="Company or university" required />
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="phone" placeholder="Your phone number" />
+              </label>
+              <label>
+                Buyer type
+                <select name="buyerType" required>
+                  <option value="">Select one</option>
+                  <option>Company</option>
+                  <option>College or university</option>
+                  <option>Coaching or training center</option>
+                  <option>Other organization</option>
+                </select>
+              </label>
+              <label>
+                Interested in
+                <select name="interest" required>
+                  <option value="">Select one</option>
+                  <option>Renting MarkMate</option>
+                  <option>Buying MarkMate</option>
+                  <option>Custom setup</option>
+                  <option>Product demo</option>
+                </select>
+              </label>
+              <label class="full-field">
+                Message
+                <textarea name="message" rows="4" placeholder="Tell us what attendance problem you want to solve"></textarea>
+              </label>
+              <button class="button button-primary full-field" type="submit" data-icon="mail">Send enquiry</button>
+            </div>
+            <div class="form-success" id="formSuccess" hidden>
+              <div class="success-icon">
+                <i data-lucide="check-circle-2"></i>
+              </div>
+              <h3>Enquiry Sent!</h3>
+              <p>Thank you for reaching out. We will get back to you at <strong id="submittedEmail"></strong> shortly.</p>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand-wrap">
+        <a class="brand" href="index.html" aria-label="MarkMate home">
+          <img class="brand-logo" src="./assets/logo_1-CR_n5tLJ.png" alt="MarkMate Logo" />
+          <span>MarkMate</span>
+        </a>
+        <p class="copyright">&copy; 2026 MarkMate. All rights reserved.</p>
+      </div>
+      <p>Attendance management for companies, colleges, and universities.</p>
+    </footer>
+
+  </body>
+</html>

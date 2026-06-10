@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    # Copy the contents of the dist folder directly into public_html
+    - /bin/rsync -av --delete dist/ /home/xz4enrxjpyqm/public_html/

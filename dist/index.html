@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MarkMate is an attendance management system for companies, colleges, universities, coaching centers, and training teams."
+    />
+    <title>MarkMate | Smart Attendance Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/script-C2vHGidT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/script-CKsKBxkw.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MarkMate home">
+        <img class="brand-logo" src="./assets/logo_1-CR_n5tLJ.png" alt="MarkMate Logo" />
+        <span>MarkMate</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#solution">Solution</a>
+        <a href="#buyers">For teams</a>
+        <a href="#plans">Plans</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Book demo</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Smart attendance software for organizations that need reliable records</p>
+          <h1 id="hero-title">MarkMate</h1>
+          <p class="hero-copy">
+            Sell-ready and rent-ready attendance management for companies, universities, colleges,
+            coaching centers, and training teams.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html" data-icon="calendar">Schedule demo</a>
+            <a class="button button-secondary" href="#plans" data-icon="package">View options</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Product highlights">
+        <div>
+          <strong>Quick setup</strong>
+          <span>Launch attendance tracking without long onboarding.</span>
+        </div>
+        <div>
+          <strong>Role based</strong>
+          <span>Admin, teacher, manager, student, and employee views.</span>
+        </div>
+        <div>
+          <strong>Export ready</strong>
+          <span>Use reports for payroll, audits, or academic records.</span>
+        </div>
+      </section>
+
+      <section class="section split reveal reveal-up" id="solution">
+        <div class="section-copy">
+          <p class="section-kicker">The product</p>
+          <h2>Attendance that is easier to prove, manage, and scale.</h2>
+          <p>
+            MarkMate replaces manual registers and scattered spreadsheets with a focused system for
+            marking attendance, checking live status, reviewing absences, and exporting reports.
+          </p>
+          <div class="feature-grid">
+            <article>
+              <span class="feature-icon"><i data-lucide="scan-line"></i></span>
+              <h3>Fast marking</h3>
+              <p>Daily attendance can be recorded through the mode your customer needs.</p>
+            </article>
+            <article>
+              <span class="feature-icon"><i data-lucide="bar-chart-3"></i></span>
+              <h3>Useful analytics</h3>
+              <p>Identify late trends, absence patterns, and department or class performance.</p>
+            </article>
+            <article>
+              <span class="feature-icon"><i data-lucide="shield-check"></i></span>
+              <h3>Controlled access</h3>
+              <p>Give every role the right level of visibility without exposing private records.</p>
+            </article>
+            <article>
+              <span class="feature-icon"><i data-lucide="file-down"></i></span>
+              <h3>Report exports</h3>
+              <p>Download clean attendance records for internal review and compliance needs.</p>
+            </article>
+          </div>
+        </div>
+        <div class="product-panel" aria-label="MarkMate attendance dashboard preview">
+          <div class="panel-top">
+            <span>Today</span>
+            <strong id="attendanceRate">92.4%</strong>
+          </div>
+          <div class="panel-chart" aria-hidden="true" id="panelChart">
+            <span style="--height: 58%"></span>
+            <span style="--height: 76%"></span>
+            <span style="--height: 64%"></span>
+            <span style="--height: 88%"></span>
+            <span style="--height: 72%"></span>
+            <span id="liveChartBar" style="--height: 92.4%"></span>
+          </div>
+          <div class="panel-list">
+            <div><span class="dot present"></span> Present <strong id="countPresent">1,284</strong></div>
+            <div><span class="dot late"></span> Late <strong id="countLate">46</strong></div>
+            <div><span class="dot absent"></span> Absent <strong id="countAbsent">107</strong></div>
+          </div>
+
+          <div class="simulator-title">
+            <span>Simulated Team Check-in</span>
+          </div>
+          <div class="sim-list">
+            <div class="sim-row" data-user="0">
+              <div class="sim-user">
+                <span class="sim-avatar">AC</span>
+                <div class="sim-info">
+                  <span class="sim-name">Alex Carter</span>
+                  <span class="sim-role">Product Designer</span>
+                </div>
+              </div>
+              <div class="sim-controls">
+                <button class="sim-btn btn-p active" data-status="p" type="button" aria-label="Mark Present">P</button>
+                <button class="sim-btn btn-l" data-status="l" type="button" aria-label="Mark Late">L</button>
+                <button class="sim-btn btn-a" data-status="a" type="button" aria-label="Mark Absent">A</button>
+              </div>
+            </div>
+            <div class="sim-row" data-user="1">
+              <div class="sim-user">
+                <span class="sim-avatar">SJ</span>
+                <div class="sim-info">
+                  <span class="sim-name">Sarah Jenkins</span>
+                  <span class="sim-role">Frontend Engineer</span>
+                </div>
+              </div>
+              <div class="sim-controls">
+                <button class="sim-btn btn-p active" data-status="p" type="button" aria-label="Mark Present">P</button>
+                <button class="sim-btn btn-l" data-status="l" type="button" aria-label="Mark Late">L</button>
+                <button class="sim-btn btn-a" data-status="a" type="button" aria-label="Mark Absent">A</button>
+              </div>
+            </div>
+            <div class="sim-row" data-user="2">
+              <div class="sim-user">
+                <span class="sim-avatar">MV</span>
+                <div class="sim-info">
+                  <span class="sim-name">Marcus Vance</span>
+                  <span class="sim-role">HR Coordinator</span>
+                </div>
+              </div>
+              <div class="sim-controls">
+                <button class="sim-btn btn-p" data-status="p" type="button" aria-label="Mark Present">P</button>
+                <button class="sim-btn btn-l active" data-status="l" type="button" aria-label="Mark Late">L</button>
+                <button class="sim-btn btn-a" data-status="a" type="button" aria-label="Mark Absent">A</button>
+              </div>
+            </div>
+            <div class="sim-row" data-user="3">
+              <div class="sim-user">
+                <span class="sim-avatar">PP</span>
+                <div class="sim-info">
+                  <span class="sim-name">Priya Patel</span>
+                  <span class="sim-role">Operations Lead</span>
+                </div>
+              </div>
+              <div class="sim-controls">
+                <button class="sim-btn btn-p active" data-status="p" type="button" aria-label="Mark Present">P</button>
+                <button class="sim-btn btn-l" data-status="l" type="button" aria-label="Mark Late">L</button>
+                <button class="sim-btn btn-a" data-status="a" type="button" aria-label="Mark Absent">A</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section buyer-section reveal reveal-up" id="buyers">
+        <div class="section-heading">
+          <p class="section-kicker">Built for two markets</p>
+          <h2>One attendance product, packaged for different buyers.</h2>
+        </div>
+        <div class="buyer-tabs" role="tablist" aria-label="Buyer type">
+          <button class="buyer-tab active" type="button" role="tab" aria-selected="true" data-target="companies">
+            <span data-lucide="building-2"></span>
+            Companies
+          </button>
+          <button class="buyer-tab" type="button" role="tab" aria-selected="false" data-target="universities">
+            <span data-lucide="graduation-cap"></span>
+            Universities
+          </button>
+        </div>
+        <div class="buyer-content active" id="companies" role="tabpanel">
+          <div class="buyer-copy">
+            <h3>For HR, admin, and operations teams</h3>
+            <p>
+              Track employee attendance by department, shift, branch, or project. Give managers the
+              visibility they need while keeping payroll records clean.
+            </p>
+          </div>
+          <ul class="check-list">
+            <li>Employee check-in and check-out records</li>
+            <li>Late arrival and absence summaries</li>
+            <li>Department-wise attendance reports</li>
+            <li>CSV export for payroll and audit workflows</li>
+          </ul>
+        </div>
+        <div class="buyer-content" id="universities" role="tabpanel" hidden>
+          <div class="buyer-copy">
+            <h3>For colleges, universities, and coaching centers</h3>
+            <p>
+              Manage attendance by course, class, semester, faculty member, or batch. MarkMate helps
+              academic teams reduce paperwork and quickly find attendance risk.
+            </p>
+          </div>
+          <ul class="check-list">
+            <li>Class-wise and subject-wise attendance records</li>
+            <li>Faculty dashboards for daily marking</li>
+            <li>Student absence and shortage tracking</li>
+            <li>Exportable reports for administration teams</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section workflow-section reveal reveal-up">
+        <div class="section-heading">
+          <p class="section-kicker">How it sells</p>
+          <h2>Simple to explain in a demo, strong enough for long-term use.</h2>
+        </div>
+        <div class="workflow">
+          <article>
+            <span>01</span>
+            <h3>Set up users</h3>
+            <p>Add employees, students, teachers, departments, classes, or branches.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Mark attendance</h3>
+            <p>Use the attendance flow that fits the buyer's environment and policy.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Review records</h3>
+            <p>Admins can monitor present, late, absent, and leave data from one place.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Export reports</h3>
+            <p>Share attendance summaries with HR, payroll, management, or academic offices.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section plans-section reveal reveal-up" id="plans">
+        <div class="section-heading">
+          <p class="section-kicker">Commercial options</p>
+          <h2>Offer MarkMate as a rental plan or a full purchase.</h2>
+        </div>
+        <div class="plans">
+          <article class="plan-card">
+            <div class="plan-label">Rent</div>
+            <h3>Monthly or yearly license</h3>
+            <p>
+              Best for organizations that want support, maintenance, updates, and predictable cost.
+            </p>
+            <ul>
+              <li>Cloud deployment option</li>
+              <li>Admin onboarding</li>
+              <li>Regular updates</li>
+              <li>Support and issue handling</li>
+            </ul>
+            <a class="button button-outline" href="contact.html" data-icon="message-square">Ask pricing</a>
+          </article>
+          <article class="plan-card featured-plan">
+            <div class="plan-label">Buy</div>
+            <h3>One-time project handover</h3>
+            <p>
+              Best for companies or universities that want ownership and internal hosting control.
+            </p>
+            <ul>
+              <li>Source code handover</li>
+              <li>Deployment guidance</li>
+              <li>Basic customization</li>
+              <li>Optional support package</li>
+            </ul>
+            <a class="button button-primary" href="contact.html" data-icon="send">Request proposal</a>
+          </article>
+          <article class="plan-card">
+            <div class="plan-label">Custom</div>
+            <h3>Tailored institution setup</h3>
+            <p>
+              Best when the buyer needs custom roles, reports, branding, or policy-based rules.
+            </p>
+            <ul>
+              <li>Custom fields and workflows</li>
+              <li>Branding and domain setup</li>
+              <li>Advanced reporting</li>
+              <li>Training for staff</li>
+            </ul>
+            <a class="button button-outline" href="contact.html" data-icon="sliders-horizontal">Discuss scope</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-section reveal reveal-up">
+        <h2>Ready to streamline your attendance?</h2>
+        <p>Get in touch with us to schedule a demo, ask about licensing, or discuss custom setups.</p>
+        <a href="contact.html" class="button button-primary" data-icon="mail">Contact our team</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand-wrap">
+        <a class="brand" href="#top" aria-label="MarkMate home">
+          <img class="brand-logo" src="./assets/logo_1-CR_n5tLJ.png" alt="MarkMate Logo" />
+          <span>MarkMate</span>
+        </a>
+        <p class="copyright">&copy; 2026 MarkMate. All rights reserved.</p>
+      </div>
+      <p>Attendance management for companies, colleges, and universities.</p>
+    </footer>
+
+  </body>
+</html>
